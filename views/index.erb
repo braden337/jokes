@@ -1,0 +1,9 @@
+<h1>Just Jokes</h1>
+
+<% @jokes.each_with_index do |joke, index| %>
+  <blockquote>
+    <span><%= index + 1 %></span>
+    <p><%= joke.words %></p>
+    <cite><%= joke.comedian.name %></cite>
+  </blockquote>
+<% end %>

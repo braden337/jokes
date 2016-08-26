@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0em 1em 2em 1em;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+}
+
+blockquote {
+  position: relative;
+  background-color: lightgray;
+  background: url('/linedpaper.png');
+  border: 1px lightgray solid;
+  border-radius: 0 1em 1em 0;
+  margin: 0;
+  padding: 0 1em 1em 1em;
+}
+
+blockquote > span {
+  position: absolute;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  top: -0.5em;
+  left: -0.5em;
+}
+
+blockquote > p {
+  line-height: 2em;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+blockquote > cite {
+  font-size: 1.5em;
+  display: block;
+  text-align: right;
+}
+
+blockquote + blockquote {
+  margin-top: 2em;
+}
+
+
+@media (min-width: 1200px) {
+  h1 {
+    display: inline-block;
+  }
+  
+  blockquote {
+    width: 50%;
+  }
+}
+
+footer {
+  text-align: center;
+  margin: 3em;
+  font-style: italic;
+}
+
+.hearts {
+  color: white;
+  font-weight: bold;
+  background-color: skyblue;
+  font-style: normal;
+}
