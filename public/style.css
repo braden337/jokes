@@ -32,7 +32,7 @@ blockquote > span {
   height: 2em;
   line-height: 2em;
   text-align: center;
-  background-color: black;
+  background-color: skyblue;
   color: white;
   font-weight: bold;
   top: -0.5em;
@@ -55,26 +55,22 @@ blockquote + blockquote {
   margin-top: 2em;
 }
 
-
-@media (min-width: 1200px) {
-  h1 {
-    display: inline-block;
-  }
-  
-  blockquote {
-    width: 50%;
-  }
-}
-
 footer {
   text-align: center;
   margin: 3em;
   font-style: italic;
 }
 
-.hearts {
-  color: white;
-  font-weight: bold;
-  background-color: skyblue;
-  font-style: normal;
+footer > img {
+  max-height: 0.75em;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    display: inline-block;
+  }
+
+  blockquote {
+    width: 50%;
+  }
 }
