@@ -1,15 +1,3 @@
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  padding: 0em 1em 2em 1em;
-}
-
 h1 {
   display: block;
   text-align: center;
@@ -21,8 +9,8 @@ blockquote {
   background: url('/linedpaper.png');
   border: 1px lightgray solid;
   border-radius: 0 1em 1em 0;
-  margin: 0;
-  padding: 0 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
+  margin: 1em;
 }
 
 blockquote > span {
@@ -35,34 +23,26 @@ blockquote > span {
   background-color: skyblue;
   color: white;
   font-weight: bold;
-  top: -0.5em;
-  left: -0.5em;
+  top: -1em;
+  left: -1em;
 }
 
 blockquote > p {
   line-height: 2em;
   font-family: monospace;
-  font-size: 1.5em;
-}
-
-blockquote > cite {
-  font-size: 1.5em;
-  display: block;
-  text-align: right;
 }
 
 blockquote + blockquote {
   margin-top: 2em;
 }
 
-footer {
+#footer {
   text-align: center;
-  margin: 3em;
-  font-style: italic;
+  margin: 3em 0;
 }
 
-footer > img {
-  max-height: 0.75em;
+.hearts {
+  color: skyblue;
 }
 
 @media (min-width: 1200px) {
@@ -72,5 +52,10 @@ footer > img {
 
   blockquote {
     width: 50%;
+  }
+
+  #footer {
+    text-align: left;
+    padding-left: 1em;
   }
 }
